@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    InterComponent Communication
+  </h1>
+  
+  <app-child [dataParent]="'Hello from parent'" (childData)="data=$event"></app-child>
+  <p>From Child to Parent : {{data}}</p>
+</div>
+<div style="text-align:center">
+<h1>NgModel Demo</h1>
+<app-ng-model-demo></app-ng-model-demo>
+</div>
