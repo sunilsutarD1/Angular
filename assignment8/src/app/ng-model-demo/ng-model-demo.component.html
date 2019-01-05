@@ -1,0 +1,8 @@
+<p>With NgModel : 
+  <input type="text" [(ngModel)]="name" />
+  {{name.length}}
+</p>
+<p>Without NgModel :
+  <input type="text" (input)="fun($event)">
+   {{sname.length}}
+</p>
